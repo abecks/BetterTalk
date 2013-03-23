@@ -1,0 +1,1 @@
+adt -package -tsa none -storetype pkcs12 -keystore BetterTalk.pfx -target native BetterTalk-installer-0.1.dmg bettertalk.xml .

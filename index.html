@@ -1,0 +1,98 @@
+<html>
+<head>
+    <title>Talk</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="mainWindow">
+<header id="accountbar" class="hide">
+    <div id="user-pic"></div>
+
+    <div id="account">
+        <div id="user-name"></div>
+        <div id="user-status"></div>
+    </div>
+
+    <div class="btn-group" id="show">
+        <button class="btn btn-custom dropdown-toggle" data-toggle="dropdown" id="show-btn">
+            <span class="btn-label"><span class="show show-online"></span></span>
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu pull-right">
+            <li data-show="online"><a href="#"><span class="show show-online"></span>online</a></li>
+            <li data-show="dnd"><a href="#"><span class="show show-dnd"></span>dnd</a></li>
+            <li data-show="away"><a href="#"><span class="show show-away"></span>away</a></li>
+            <li data-show="unavailable"><a href="#"><span class="show show-unavailable"></span>offline</a></li>
+            <li data-show="logout"><a href="#"><span class="show show-logout"></span>logout</a></li>
+        </ul>
+    </div>
+</header>
+
+<div id="content" class="vertcenter">
+    <div class="vertcenter-inner">
+        <form id="login" class="fade">
+            <div id="usernameGroup" class="control-group">
+                <label>Email address</label>
+                <div class="controls">
+                    <input type="text" id="username">
+                    <span class="help-block" id="usernameHelp"></span>
+                </div>
+            </div>
+            <div id="passwordGroup" class="control-group">
+                <label>Password</label>
+                <div class="controls">
+                    <input type="password" id="password">
+                    <span class="help-block" id="passwordHelp"></span>
+                </div>
+            </div>
+            <label class="checkbox">
+                <input type="checkbox" id="remember"> Remember me
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" id="autologin"> Log me in automatically
+            </label>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+
+        <div id="loader" class="hide">
+            <div class="ball"></div>
+            <div class="ball1"></div>
+        </div>
+
+        <ul id="roster" class="hide">
+
+        </ul>
+
+    </div>
+</div>
+
+<footer id="toolbar-wrapper" class="hide">
+    <div class="toolbar">
+        <button class="btn btn-custom btn-toolbar" id="addContact"><i class="icon-plus"></i></button>
+        <button class="btn btn-custom btn-toolbar" id="searchRoster"><i class="icon-search"></i></button>
+        <button class="btn btn-custom btn-toolbar pull-right" id="settings"><i class="icon-cog"></i></button>
+    </div>
+</footer>
+
+
+<!-- Local jQuery -->
+<script src="js/libs/jquery-1.8.0.js" type="text/javascript"></script>
+
+<!-- AIR Aliases for easy development -->
+<script src="js/libs/AIRAliases.js" type="text/javascript"></script>
+<script src="js/libs/AIRIntrospector.js" type="text/javascript"></script>
+
+
+<!-- Plugins -->
+<script src="js/libs/bootstrap.js" type="text/javascript"></script>
+<script src="js/libs/base64.js" type="text/javascript"></script>
+<script src="js/libs/jquery.xml2json.js" type="text/javascript"></script>
+<script src="js/libs/CryptoJS/components/core-min.js" type="text/javascript"></script>
+<script src="js/libs/CryptoJS/components/sha1-min.js" type="text/javascript"></script>
+<script src="js/libs/CryptoJS/components/enc-base64-min.js" type="text/javascript"></script>
+
+<!-- Application JS file -->
+<script src="js/classes/XMPP.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+
+</body>
+</html>

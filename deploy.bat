@@ -1,0 +1,1 @@
+adt -package -tsa none -storetype pkcs12 -keystore BetterTalk.pfx BetterTalk.air bettertalk.xml .
