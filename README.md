@@ -1,4 +1,5 @@
 ## BetterTalk
+![BetterTalk screeenshot](http://dribbble.s3.amazonaws.com/users/193075/screenshots/752364/talk.png)
 
 BetterTalk is a Google Talk client built on the Adobe Air HTML platform. 
 
