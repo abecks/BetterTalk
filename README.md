@@ -5,7 +5,7 @@ BetterTalk is a Google Talk client built on the Adobe Air HTML platform.
 ##Download
 You must have [Adobe Air](http://get.adobe.com/air/) installed to use BetterTalk.
 
-Download link coming soon!
+[Download the BetterTalk AIR package.](https://github.com/abecks/BetterTalk/blob/master/BetterTalk.air?raw=true)
 
 ##Features
 * Clean user interface
